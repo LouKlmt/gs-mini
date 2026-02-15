@@ -21,7 +21,7 @@ Features
 
 Tech Stack
 
-    Framework: Next.js 16 (App Router)
+    Framework: Next.js (App Router)
 
     Language: TypeScript
 
