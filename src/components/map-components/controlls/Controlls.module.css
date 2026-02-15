@@ -1,0 +1,134 @@
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: sans-serif;
+    min-width: 160px;
+    width: fit-content;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0;
+    height: 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 15px 10px 12px;
+    cursor: grab;
+}
+
+.dragIcon {
+    width: 16px;
+    height: 16px;
+    color: #999;
+}
+
+.body {
+    padding: 15px;
+}
+
+.closeButton {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 0 8px 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.closeButtonIcon {
+    width: 18px;
+    height: 18px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.closeButton:hover {
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+.closeButton:hover .closeButtonIcon {
+    color: #ff4444;
+}
+
+.title h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #000000;
+}
+
+.label:hover {
+    color: #1697e2;
+}
+
+.label input {
+    cursor: pointer;
+}
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 16px;
+    border: 2px solid #1697e2;
+    border-radius: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.checkbox:checked {
+    background-color: #1697e2;
+}
+
+.checkbox::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #1697e2;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    transform: translateX(2px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked::before {
+    background-color: white;
+    transform: translateX(15px);
+}

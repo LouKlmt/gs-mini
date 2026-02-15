@@ -1,0 +1,152 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+.pitchButton,
+.flatButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    z-index: 10;
+}
+
+.pitchButton:hover,
+.flatButton:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #0078ff;
+    color: #0078ff;
+}
+
+.pitchButton:active,
+.flatButton:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.sidebarButtonActive {
+    background-color: #1697e2;
+}
+
+.sidebarButton:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #000;
+}
+
+.sidebarButtonActive .icon {
+    color: #fff;
+}
+
+.sidebarButton p {
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebarButtonActive p {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 115px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .sidebarButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+        z-index: 10;
+    }
+
+    .sidebarButtonActive {
+        background-color: #1697e2;
+    }
+
+    .sidebarButton:hover {
+        transform: scale(1.1);
+    }
+
+    .icon {
+        color: #000;
+    }
+
+    .sidebarButtonActive .icon {
+        color: #fff;
+    }
+
+    .sidebarButton p {
+        color: #000;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .sidebarButtonActive p {
+        color: #fff;
+    }
+}

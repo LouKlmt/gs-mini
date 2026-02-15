@@ -1,0 +1,121 @@
+.sourcelist {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: sans-serif;
+    width: fit-content;
+    width: 300px;
+    overflow-x: auto;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0;
+    height: 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 15px 10px 12px;
+    cursor: grab;
+}
+
+.title h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dragIcon {
+    width: 16px;
+    height: 16px;
+    color: #999;
+}
+
+.closeButton {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 0 8px 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.closeButton:hover {
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+.closeButtonIcon {
+    width: 18px;
+    height: 18px;
+    color: #666;
+}
+
+.closeButton:hover .closeButtonIcon {
+    color: #ff4444;
+}
+
+.body {
+    padding: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.listPoint {
+    padding: 10px 12px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid transparent;
+}
+
+.listPoint:hover {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(22, 151, 226, 0.2);
+    transform: translateY(-1px);
+}
+
+.listPoint p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.listPoint:hover p {
+    color: #1697e2;
+}
